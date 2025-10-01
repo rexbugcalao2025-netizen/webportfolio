@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar {
+	background-color: #620319;
+	
+}
+
+nav a {
+	font-family: Poppins;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: white !important;
+}
+
+
+#landing {
+	background: #9a3d44;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#landing h1{
+    font-family: Poppins;
+	font-weight: 400 !important;	
+	font-size: 50px;
+    color: #fff4f3;
+}
+
+#landing h3{
+    font-family: Poppins;
+	font-weight: 400 !important;
+	font-style: large;
+	color: #fff4f3;
+}
+
+
+#landing-content{
+    font-family: Merriweather;	
+	font-weight: 400 !important;
+	font-style: large;
+    color: #fff4f3;
+}
+
+#hr_landing {
+  /* horizontal rule  */
+  border: none;
+  height: 5px;
+  background-color: #ccc;
+}
+
+#section-title {
+    font-family: Poppins;
+	font-weight: 400 !important;
+	font-style: large;
+	color:#3e5500;   
+}
+
+#projects {	
+	background: #ffa8aa;
+}
+
+#section-my-projects h3{
+	font-family: Poppins;
+	font-weight: 400 !important;
+	font-style: large;
+	color:#3e5500;   
+}
+
+#section-my-projects p{
+	font-family: Merriweather;
+	font-weight: 400 !important;
+	font-style: medium;
+	color:#3e5500;
+}
+
+
+#tools div {
+	background: #f3eed9;
+	border: none !important;
+	color:#601438 !important;
+}
+
+#form_button {
+	background-color: #620319;
+	color: #ffecf0;
+}
+
+#contact{
+	background: #d1e7e0;
+}
+
+footer {
+    font-family: Poppins;
+	background-color: #620319;
+    color: white;
+}
