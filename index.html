@@ -196,7 +196,8 @@
                         <div class="col-10 mx-5 border align-items-center">
                             <img class="img-fluid col-4 mx-1 my-1" src="./images/html.png" alt=""> 
                             <img class="img-fluid col-4 mx-1 my-1" src="./images/css3.png" alt="">
-                            <img class="img-fluid col-4 mx-1 my-1" src="./images/bootstrap.png" alt=""> 
+                            <img class="img-fluid col-4 mx-1 my-1" src="./images/bootstrap.png" alt="">                             
+                            <img class="img-fluid col-4 mx-1 my-1" src="./images/javascript.png" alt=""> 
                         </div>                        
                     </div>
 
@@ -213,8 +214,7 @@
                         <div class="col-10 mx-5 border align-items-center">
                             <img class="img-fluid col-4 mx-1 my-1" src="./images/mongodb.png" alt=""> 
                             <img class="img-fluid col-4 mx-1 my-1" src="./images/express.png" alt="">
-                            <img class="img-fluid col-4 mx-1 my-1" src="./images/vue.png" alt=""> 
-                            <img class="img-fluid col-4 mx-1 my-1" src="./images/javascript.png" alt="">
+                            <img class="img-fluid col-4 mx-1 my-1" src="./images/vue.png" alt="">
                             <img class="img-fluid col-4 mx-1 my-1" src="./images/python.png" alt="">                            
                             <img class="img-fluid col-4 mx-1 my-1" src="./images/dotnet.png" alt="">
                             <img class="img-fluid col-4 mx-1 my-1" src="./images/csharp.png" alt=""> 
@@ -256,25 +256,18 @@
     <!-- CONTACT SECTION -->
 
     <div class="container" id="contact">
-        <div id="contact-section" class="row py-5">
-                       
-			<!-- <div id="contact-us-col-1" class="col-md-6 ">
-                <div class="col-lg-12 col-md-6 ">
-                    <img src="./images/me.png" alt="" class="col-8 img-fluid mx-5">
+        <div id="contact-section" class="row py-5">                      
+		
+                <div class="col-md-6 d-flex justify-content-center" id="map">                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18834.19607549038!2d125.59979360799402!3d7.079307234694887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d0929299a9d%3A0x61c41ac224e33c3d!2sRED%20FOOTPRINT!5e0!3m2!1sen!2sph!4v1759306542258!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-			</div> -->
-
             
-            <div class="col-md-6 d-flex justify-content-center" id="map">                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18834.19607549038!2d125.59979360799402!3d7.079307234694887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d0929299a9d%3A0x61c41ac224e33c3d!2sRED%20FOOTPRINT!5e0!3m2!1sen!2sph!4v1759306542258!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
 
-
-            <div class="col-12 col-md-6" id="section-title">
+            <div class="col-12 col-md-6 mt-5 mt-md-0" id="section-title">
                 <h2>Contact Me</h2>
             
                 <form>
-					<div class="form-group me-5 py-2 pe-5">
+					<div class="form-group me-md-3 py-2 pe-md-5">
 						<label for="name" id="text-label">Name</label>
 						<input type="text" 
 						       class="form-control py-3" 
@@ -282,7 +275,7 @@
 						       placeholder="Name" name="">
 					</div>
 
-					<div class="form-group me-5 py-2 pe-5">
+					<div class="form-group me-md-3 py-2 pe-md-5">
 						<label for="email" id="text-label">Email</label>
 						<input type="email" 
 						       class="form-control py-3" 
@@ -290,16 +283,16 @@
 						       placeholder="example@mail.com" name="">
 					</div>
 
-					<div class="form-group me-5 py-2 pe-5">
+					<div class="form-group me-md-3 py-2 pe-md-5">
 						<label for="message" id="text-label">Mesage</label>
 						<textarea class="form-control" id="message_text" rows="5">Message...</textarea>
 					</div>
 
-					<div class="d-flex justify-content-end">
+					<div class="d-flex justify-content-start">
 						<button type="button" 
-						       class="btn btn-lg border rounded-pill mt-3 me-5"
-						       id="form_button" 
-						       >Submit</button>
+						       class="btn btn-lg border rounded-pill mt-1 me-5"
+                               data-bs-toggle="modal" data-bs-target="#modalDiv"
+						       id="form_button">Send to Me...</button>
 					</div>
 
 				</form>
@@ -307,9 +300,27 @@
             </div>
         </div>
     </div>
-
     <!-- END OF CONTACT SECTION -->
 
+    <!-- MODAL -->
+    <div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="modalDivLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDivLabel">Message Sent!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    Got it! Let me get back to you shortly!
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer -->
